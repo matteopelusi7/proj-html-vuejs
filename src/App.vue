@@ -1,17 +1,23 @@
 <template>
   <div id="app">
-
+    <MainHeader />
+    <MainContent />
+    <FooterContent />
   </div>
 </template>
 
 <script>
 
-
+import MainHeader from './components/Header.vue'
+import MainContent from './components/Main.vue'
+import FooterContent from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
-
+    MainHeader,
+    MainContent,
+    FooterContent
   }
 }
 </script>
