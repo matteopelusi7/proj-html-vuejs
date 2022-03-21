@@ -1,0 +1,46 @@
+//color
+
+$white: #ffffff;
+$black: #272727;
+$gray: #868686;
+$red: #f72b0c;
+$cloud: #c6c1bd;
+$froly: #f0776b;
+$masala: #403d3b;
+$storm: #e4cdc9;
+$naturalgray: #8b8a87;
+$dustygray: #9c9c9c;
+$green: #86b54a;
+$darkgreen: #86b648;
+$chicago: #5d5d5c;
+$darkred: #bf351f;
+$black: #040404;
+$sienna: #e97c62;
+
+//layout
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+// size 
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
