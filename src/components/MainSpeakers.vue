@@ -20,7 +20,7 @@
 
         <div class="speakers-box">
           <figure>
-            <img src="../assets/img/speaker-6-150x150.jpg" alt="">
+            <img src="../assets/img/speaker-6.jpg" alt="">
           </figure>
           <div>
             <p class="speaker">Patrick Spencer</p>
@@ -30,7 +30,7 @@
 
         <div class="speakers-box">
           <figure>
-            <img src="../assets/img/speaker-5-150x150.jpg" alt="">
+            <img src="../assets/img/speaker-5.jpg" alt="">
           </figure>
           <div>
             <p class="speaker">Janet Jones</p>
@@ -40,7 +40,7 @@
 
         <div class="speakers-box">
           <figure>
-            <img src="../assets/img/speaker-4-150x150.jpg" alt="">
+            <img src="../assets/img/speaker-4.jpg" alt="">
           </figure>
           <div>
             <p class="speaker">Michael Dover</p>
@@ -50,7 +50,7 @@
 
         <div class="speakers-box">
           <figure>
-            <img src="../assets/img/speaker-3-150x150.jpg" alt="">
+            <img src="../assets/img/speaker-3.jpg" alt="">
           </figure>
           <div>
             <p class="speaker">Angelina Holy</p>
@@ -98,10 +98,6 @@ section {
       .job {
         font-style: italic;
         color: $gray;
-      }
-
-      img {
-        width: 250px;
       }
 
       figure {
