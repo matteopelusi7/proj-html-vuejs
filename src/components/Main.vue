@@ -1,16 +1,16 @@
 <template>
   <main>
-  <MainJumbotron />
-  <MainAbout />
-  <MainSubscribe />
-  <MainSpeakers />
-  <MainProgram />
-  <MainMap />
-  <MainLocation />
-  <MainNews />
-  <MainTickets />
-  <MainPresentation />
-  <MainSponsor />
+    <MainJumbotron />
+    <MainAbout />
+    <MainSubscribe />
+    <MainSpeakers />
+    <MainProgram />
+    <MainMap />
+    <MainLocation />
+    <MainNews />
+    <MainTickets />
+    <MainPresentation />
+    <MainSponsor />
   </main>
 </template>
 
