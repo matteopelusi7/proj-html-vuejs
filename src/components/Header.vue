@@ -91,6 +91,7 @@ header {
 
   .list-navbar {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
