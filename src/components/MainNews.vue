@@ -1,6 +1,62 @@
 <template>
   <section>
 
+    <div class="container">
+
+      <div class="row title-row">
+
+        <div class="title-box">
+          <h4 class="title">Recent news</h4>
+        </div>
+
+        <div class="more-info">
+          <p>Read All News</p>
+        </div>
+
+      </div>
+
+      <div class="row row-news">
+
+        <div class="box-news">
+          <figure class="img">
+            <img src="../assets/img/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o (2).jpg" alt="">
+          </figure>
+          <div>
+            <p class="data-post">03 Dec 2013 / 0 comments</p>
+            <h4 class="title-news">Sedial eiusmod tempor</h4>
+            <p class="description-news">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua idque Caesaris facere voluntate liceret: sese habere...</p>
+            <p class="more-info">Read More</p>
+          </div>
+        </div>
+
+        <div class="box-news">
+          <figure class="img">
+            <img src="../assets/img/photodune-8797753-multiethnic-people-with-startup-business-t (2).jpg" alt="">
+          </figure>
+          <div>
+            <p class="data-post">03 Dec 2013 / 2 comments</p>
+            <h4 class="title-news">Donec luctus imperdiet</h4>
+            <p class="description-news">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua idque Caesaris facere voluntate liceret: sese habere...</p>
+            <p class="more-info">Read More</p>
+          </div>
+        </div>
+
+        <div class="box-news">
+          <figure class="img">
+            <img src="../assets/img/photodune-8522811-speaker-at-business-conference-and-present (2).jpg" alt="">
+          </figure>
+          <div>
+            <p class="data-post">03 Dec 2013 / 2 comments</p>
+            <h4 class="title-news">Magna pars studiorum</h4>
+            <p class="description-news">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua idque Caesaris facere voluntate liceret: sese habere...</p>
+            <p class="more-info">Read More</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 </template>
 
@@ -12,5 +68,73 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
+@import '../assets/scss/common.scss';
+
+section {
+
+  padding: 60px 0;
+
+  .description {
+    color: $gray;
+    max-width: 55%;
+    padding-left: 60px;
+  }
+
+  .more-info {
+    color: $sienna;
+    font-style: italic;
+  }
+
+  .title-box {
+    display: flex;
+    align-items: center;
+  }
+
+  .title-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+
+    .title {
+      text-transform: uppercase;
+      font-size: 28px;
+    }
+
+  }
+
+  .row-news {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    .box-news {
+      width: calc( (100% / 3) - 20px);
+
+      .data-post {
+        color: $gray;
+        font-size: 14px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+      }
+
+      .title-news {
+        text-transform: uppercase;
+        padding-bottom: 18px;
+      }
+
+      .description-news {
+        color: $gray;
+        font-size: 13px;
+        padding-bottom: 15px;
+      }
+
+    }
+
+  }
+
+}
 
 </style>

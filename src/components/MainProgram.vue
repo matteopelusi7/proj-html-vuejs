@@ -108,7 +108,7 @@ section {
   }
 
   .more-info {
-    color: $red;
+    color: $sienna;
     font-style: italic;
   }
 
