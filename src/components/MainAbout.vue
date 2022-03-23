@@ -66,7 +66,8 @@ section {
 
   .container-about {
     display: flex;
-    max-width: 30%;
+    justify-content: center;
+    width: calc((100% / 3) - 25px );
     gap: 25px;
   }
 

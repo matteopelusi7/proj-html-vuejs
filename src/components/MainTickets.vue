@@ -157,10 +157,11 @@ section {
         transform: rotate(45deg);
         position: absolute;
         top: 16px;
-        right: -20px;
+        right: -25px;
         background-color: $red;
         color: $white;
         padding: 5px 25px;
+        font-size: 14px;
       }
 
     }
