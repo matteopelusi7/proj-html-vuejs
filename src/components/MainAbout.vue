@@ -92,6 +92,7 @@ section {
     .more-info {
       color: $froly;
       font-style: italic;
+      cursor: pointer;
     }
 
   }

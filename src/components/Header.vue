@@ -105,6 +105,7 @@ header {
 
   i {
     color: $gray;
+    cursor: pointer;
   }
 
 }

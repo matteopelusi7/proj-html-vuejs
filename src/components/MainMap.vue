@@ -89,18 +89,24 @@ section {
   }
 
   .box-google {
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    height: 100px;
+
+    img {
+      width: 80px;
+      height: 35px;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+    }
+
   }
 
   .box-person {
     position: absolute;
-    bottom: 150px;
+    bottom: 120px;
     right: 10px;
     background-color: $white;
     padding: 5px;
+    cursor: pointer;
   }
 
   .box-plus {

@@ -158,6 +158,7 @@ section {
 
       span {
         color: $sienna;
+        cursor: pointer;
       }
     }
 

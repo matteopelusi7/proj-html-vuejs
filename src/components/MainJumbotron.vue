@@ -15,13 +15,15 @@
           </figure>
           <div class="date-wrapper">
             <p class="date">23- 26 may 2019</p>
+            <span>/</span>
             <p class="date">San Francisco</p>
+            <span>/</span>
             <p class="date">8 Speakers</p>
           </div>
         </div>
 
         <div class="button-jumbo">
-          <button class="button">Register online</button>
+          <button class="button"><a href="#subscribe">Register online</a></button>
         </div>
 
       </div>
@@ -79,13 +81,6 @@ section {
 
     figure {
       padding-bottom: 10px;
-    }
-
-    .date {
-
-      &::after {
-        content: ' /';
-      }
     }
 
     .date-wrapper {

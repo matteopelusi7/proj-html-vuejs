@@ -70,6 +70,7 @@ section {
         color: $gray;
         max-width: 60%;
         margin: 0 auto;
+        padding-bottom: 25px;
       }
     }
 

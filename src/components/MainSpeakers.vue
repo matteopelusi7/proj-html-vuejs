@@ -106,7 +106,8 @@ export default {
 
 section {
 
-  padding: 40px 10px;
+  padding: 60px 10px;
+  background-color: #f6f6f6;
 
   .speakers-row {
     display: flex;

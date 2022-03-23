@@ -99,7 +99,7 @@ export default {
 
 section {
 
-  padding: 60px 10px;
+  padding: 80px 10px;
 
   .description {
     color: $gray;
@@ -110,6 +110,7 @@ section {
   .more-info {
     color: $sienna;
     font-style: italic;
+    cursor: pointer;
   }
 
   .title-box {
@@ -149,6 +150,7 @@ section {
       .title-box {
         font-weight: 700;
         padding-bottom: 7px;
+        text-transform: uppercase;
       }
 
       p {
@@ -203,7 +205,7 @@ section {
 
     .title-box-2 {
       font-size: 25px;
-      font-weight: 700;
+      font-weight: 500;
       text-transform: uppercase;
     }
 

@@ -75,7 +75,7 @@ section {
     }
 
     .title {
-      font-size: 30px;
+      font-size: 27px;
       font-weight: 500;
     }
 
@@ -103,6 +103,7 @@ section {
     .check {
       color: $red;
       padding-bottom: 10px;
+      cursor: pointer;
     }
 
   }

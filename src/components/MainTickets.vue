@@ -151,6 +151,7 @@ section {
         color: white;
         text-transform: uppercase;
         font-size: 15px;
+        cursor: pointer;
       }
 
       .featured {

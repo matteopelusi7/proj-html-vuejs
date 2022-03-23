@@ -96,6 +96,7 @@ section {
   .more-info {
     color: $sienna;
     font-style: italic;
+    cursor: pointer;
   }
 
   .title-box {
