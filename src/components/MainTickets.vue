@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="tickets">
 
     <div class="container">
 
@@ -87,7 +87,7 @@ section {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 80px 0;
+  padding: 80px 10px;
 
   .container {
     display: flex;

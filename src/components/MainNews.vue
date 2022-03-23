@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="news">
 
     <div class="container">
 
@@ -20,6 +20,10 @@
         <div class="box-news">
           <figure class="img">
             <img src="../assets/img/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o (2).jpg" alt="">
+            <div class="stick-news">
+              <i class="fa-solid fa-volume-high"></i>
+              <p>Sticky Post</p>
+            </div>
           </figure>
           <div>
             <p class="data-post">03 Dec 2013 / 0 comments</p>
@@ -32,6 +36,10 @@
         <div class="box-news">
           <figure class="img">
             <img src="../assets/img/photodune-8797753-multiethnic-people-with-startup-business-t (2).jpg" alt="">
+            <div class="stick-news">
+              <i class="fa-solid fa-volume-high"></i>
+              <p>Sticky Post</p>
+            </div>
           </figure>
           <div>
             <p class="data-post">03 Dec 2013 / 2 comments</p>
@@ -44,6 +52,10 @@
         <div class="box-news">
           <figure class="img">
             <img src="../assets/img/photodune-8522811-speaker-at-business-conference-and-present (2).jpg" alt="">
+            <div class="stick-news">
+              <i class="fa-solid fa-volume-high"></i>
+              <p>Sticky Post</p>
+            </div>
           </figure>
           <div>
             <p class="data-post">03 Dec 2013 / 2 comments</p>
@@ -73,7 +85,7 @@ export default {
 
 section {
 
-  padding: 60px 0;
+  padding: 60px 10px;
 
   .description {
     color: $gray;
@@ -133,6 +145,29 @@ section {
 
     }
 
+  }
+
+  .img {
+    position: relative;
+  }
+
+  .stick-news {
+    position: absolute;
+    bottom: 5px;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba($color: black, $alpha: 0.8);
+    color: $white;
+    padding: 5px 12px;
+    text-transform: uppercase;
+    font-size: 12px;
+    visibility: hidden;
+  }
+
+  .box-news:hover .stick-news {
+    visibility: visible;
   }
 
 }

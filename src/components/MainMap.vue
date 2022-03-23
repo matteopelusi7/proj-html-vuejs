@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="map">
 
     <div class="img-wrapper">
       <img src="../assets/img/vt (23).png" alt="">

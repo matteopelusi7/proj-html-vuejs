@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="location">
 
     <div class="container">
       <div class="row">
@@ -54,7 +54,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   color: $white;
-  padding: 80px 0;
+  padding: 80px 10px;
 
   .row {
     display: flex;

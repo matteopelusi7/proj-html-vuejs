@@ -19,6 +19,10 @@ $sienna: #e97c62;
 
 //layout
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;

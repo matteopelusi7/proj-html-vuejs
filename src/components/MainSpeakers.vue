@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="speakers">
 
     <div class="container">
 
@@ -19,9 +19,16 @@
       <div class="row speakers-row">
 
         <div class="speakers-box">
-          <figure>
-            <img src="../assets/img/speaker-6.jpg" alt="">
-          </figure>
+          <div class="box-image">
+            <figure>
+              <img src="../assets/img/speaker-6.jpg" alt="">
+            </figure>
+            <div class="box-icon">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
           <div>
             <p class="speaker">Patrick Spencer</p>
             <p class="job">SeP Analyzer</p>
@@ -29,9 +36,16 @@
         </div>
 
         <div class="speakers-box">
-          <figure>
-            <img src="../assets/img/speaker-5.jpg" alt="">
-          </figure>
+          <div class="box-image">
+            <figure>
+              <img src="../assets/img/speaker-5.jpg" alt="">
+            </figure>
+            <div class="box-icon">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
           <div>
             <p class="speaker">Janet Jones</p>
             <p class="job">Newyork Post's GM</p>
@@ -39,9 +53,16 @@
         </div>
 
         <div class="speakers-box">
-          <figure>
-            <img src="../assets/img/speaker-4.jpg" alt="">
-          </figure>
+          <div class="box-image">
+            <figure>
+              <img src="../assets/img/speaker-4.jpg" alt="">
+            </figure>
+            <div class="box-icon">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
           <div>
             <p class="speaker">Michael Dover</p>
             <p class="job">Starbuck's CEO</p>
@@ -49,9 +70,16 @@
         </div>
 
         <div class="speakers-box">
-          <figure>
-            <img src="../assets/img/speaker-3.jpg" alt="">
-          </figure>
+          <div class="box-image">
+            <figure>
+              <img src="../assets/img/speaker-3.jpg" alt="">
+            </figure>
+            <div class="box-icon">
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+          </div>
           <div>
             <p class="speaker">Angelina Holy</p>
             <p class="job">Maxii's Manager</p>
@@ -78,7 +106,7 @@ export default {
 
 section {
 
-  padding: 40px 0;
+  padding: 40px 10px;
 
   .speakers-row {
     display: flex;
@@ -100,8 +128,9 @@ section {
         color: $gray;
       }
 
-      figure {
+      .box-image {
         padding-bottom: 15px;
+        position: relative;
       }
 
     }
@@ -128,6 +157,37 @@ section {
       cursor: pointer;
     }
     
+  }
+
+  .box-image:hover figure::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 18px;
+    right: 0;
+    background-color: rgba($color: red, $alpha: 0.5);
+  }
+
+  .box-image:hover .box-icon {
+    visibility: visible;
+  }
+
+  .box-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $white;
+    visibility: hidden;
+
+    i {
+      padding: 0 10px;
+      font-size: 19px;
+      cursor: pointer;
+    }
+
   }
 
 }

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="about">
 
     <div class="container">
 
@@ -56,7 +56,7 @@ export default {
 
 section {
 
-  padding: 50px 0;
+  padding: 50px 10px;
 
   .row {
     display: flex;

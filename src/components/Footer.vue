@@ -1,5 +1,5 @@
 <template>
-  <footer>
+  <footer id="footer">
 
     <section class="footer-main">
 
@@ -110,7 +110,7 @@ export default {
 footer {
 
   .footer-main {
-    padding: 50px 0;
+    padding: 50px 10px;
     background-color: #212121;
 
     .row {
@@ -123,7 +123,7 @@ footer {
   }
 
   .footer-final {
-    padding: 35px 0;
+    padding: 35px 10px;
     background-color: $black;
     color: $gray;
 

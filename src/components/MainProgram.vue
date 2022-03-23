@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="program">
 
     <div class="container">
 
@@ -99,7 +99,7 @@ export default {
 
 section {
 
-  padding: 60px 0;
+  padding: 60px 10px;
 
   .description {
     color: $gray;

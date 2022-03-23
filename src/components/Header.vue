@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header id="home">
     
     <div class="container">
 
@@ -38,36 +38,36 @@ export default {
     return {
       navbar: [
         {
-          link: '#',
+          link: '#home',
           text: 'Home',
           active: true
         },
         {
-          link: '#',
+          link: '#about',
           text: 'Pages'
         },
         {
-          link: '#',
+          link: '#program',
           text: 'Program'
         },
         {
-          link: '#',
+          link: '#tickets',
           text: 'Tickets'
         },
         {
-          link: '#',
+          link: '#speakers',
           text: 'Speakers'
         },
         {
-          link: '#',
+          link: '#presentation',
           text: 'Papers'
         },
         {
-          link: '#',
+          link: '#location',
           text: 'Blog'
         },
         {
-          link: '#',
+          link: '#sponsor',
           text: 'Shortcodes'
         }
       ]
@@ -82,6 +82,8 @@ export default {
 @import '../assets/scss/common.scss';
 
 header {
+
+  padding: 0 10px;
 
   .row {
     display: flex;

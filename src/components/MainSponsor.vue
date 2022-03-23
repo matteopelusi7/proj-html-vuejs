@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section id="sponsor">
 
     <div class="container">
 
@@ -47,7 +47,7 @@ export default {
 
 section {
 
-  padding: 80px 0;
+  padding: 80px 10px;
   background-color: #f6f6f6;
 
   .container {
