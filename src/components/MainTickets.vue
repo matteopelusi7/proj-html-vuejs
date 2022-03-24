@@ -41,9 +41,7 @@
           <div class="ticket-footer">
             <h5>Book now</h5>
           </div>
-          <div class="featured">
-            <span>Featured!</span>
-          </div>
+          <span class="featured">Featured!</span>
         </div>
 
         <div class="box-ticket">
@@ -157,12 +155,14 @@ section {
       .featured {
         transform: rotate(45deg);
         position: absolute;
-        top: 16px;
-        right: -25px;
-        background-color: $red;
+        top: 18px;
+        right: -22px;
+        height: 0;
         color: $white;
-        padding: 5px 25px;
         font-size: 14px;
+        border-right: 20px solid transparent;
+        border-bottom: 20px solid $red;
+        border-left: 20px solid transparent;
       }
 
     }

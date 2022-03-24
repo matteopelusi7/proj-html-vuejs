@@ -25,7 +25,7 @@
     <div class="box-footer">
       <h4 class="title-footer">Get your seat!</h4>
       <p class="description-footer">Book for your seat before it's too rate. We provide variety of ticket options.</p>
-      <button class="button">Check out tickets!</button>
+      <button class="button"><a href="#tickets">Check out tickets!</a></button>
     </div>
     <div class="box-footer">
       <h4 class="title-footer">Gallery from last year</h4>
@@ -74,7 +74,7 @@ export default {
   .icon-footer {
     display: flex;
     gap: 20px;
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .button {

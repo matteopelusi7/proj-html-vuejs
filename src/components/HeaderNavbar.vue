@@ -9,7 +9,7 @@ export default {
   name: 'HeaderNavbar',
   props: {
     element: {
-      type: String,
+      type: Object,
       required: true
     }
   }

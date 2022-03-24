@@ -13,7 +13,8 @@
 
         <nav class="list-wrapper">
           <ul class="list-navbar">
-            <HeaderNavbar v-for="(element, i) in navbar" :key="i" :element="element" /> 
+            <HeaderNavbar v-for="(element, i) in navbar" :key="i" :element="element" />
+            <div class="line"></div>
             <i class="fa-solid fa-magnifying-glass"></i>
           </ul>
         </nav>
@@ -108,6 +109,13 @@ header {
     cursor: pointer;
   }
 
+  .line {
+    height: 100%;
+    background-color: $gray;
+    width: 2px;
+    margin: 0 -3px;
+  }
+
 }
 
 @media all and (max-width: 960px) {
@@ -117,6 +125,10 @@ header {
     .row {
       flex-direction: column;
       gap: 30px;
+    }
+
+    .line {
+      display: none;
     }
 
   }
