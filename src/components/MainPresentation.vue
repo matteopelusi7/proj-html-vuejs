@@ -171,4 +171,20 @@ section {
 
 }
 
+@media all and (max-width: 444px) {
+
+  section {
+
+    .container {
+      flex-wrap: wrap;
+
+      .vimeo-bar {
+        display: none;
+      }
+    }
+
+  }
+
+}
+
 </style>

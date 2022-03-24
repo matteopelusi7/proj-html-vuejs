@@ -110,4 +110,20 @@ section {
 
 }
 
+@media all and (max-width: 400px) {
+
+  section {
+
+    .row {
+
+      .date-wrapper {
+        flex-wrap: wrap;
+      }
+
+    }
+
+  }
+
+}
+
 </style>

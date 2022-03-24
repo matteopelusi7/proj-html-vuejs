@@ -171,4 +171,26 @@ section {
 
 }
 
+@media all and (max-width: 770px) {
+
+  section {
+
+    .container {
+
+      .row-box-ticket {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .box-ticket {
+        width: 55%;
+        flex-wrap: wrap;
+      }
+
+    }
+
+  }
+
+}
+
 </style>

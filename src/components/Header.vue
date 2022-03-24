@@ -110,4 +110,17 @@ header {
 
 }
 
+@media all and (max-width: 960px) {
+
+  header {
+
+    .row {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+  }
+
+}
+
 </style>

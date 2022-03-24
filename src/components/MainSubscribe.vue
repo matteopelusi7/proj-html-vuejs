@@ -128,4 +128,29 @@ section {
 
 }
 
+@media all and (max-width: 530px) {
+
+  section {
+
+    .row {
+
+      .countdown {
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+      }
+
+      .form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+    }
+
+  }
+  
+}
+
 </style>

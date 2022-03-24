@@ -217,4 +217,16 @@ section {
 
 }
 
+@media all and (max-width: 444px) {
+
+  section {
+
+    .box-description {
+      flex-wrap: wrap;
+    }
+
+  }
+
+}
+
 </style>

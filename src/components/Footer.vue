@@ -137,4 +137,23 @@ footer {
 
 }
 
+@media all and (max-width: 770px) {
+
+  footer {
+
+    .row {
+      flex-wrap: wrap;
+    }
+
+    .footer-final {
+      .row {
+        justify-content: center;
+        gap: 15px;
+      }
+  }
+
+  }
+
+}
+
 </style>
