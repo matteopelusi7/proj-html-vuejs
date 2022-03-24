@@ -18,10 +18,10 @@
 
       <div class="row speakers-row">
 
-        <div class="speakers-box">
+        <div v-for="(el, i) in speakersList" :key="i" class="speakers-box">
           <div class="box-image">
             <figure>
-              <img src="../assets/img/speaker-6.jpg" alt="">
+              <img :src="el.img" alt="">
             </figure>
             <div class="box-icon">
               <i class="fa-brands fa-twitter"></i>
@@ -30,59 +30,8 @@
             </div>
           </div>
           <div>
-            <p class="speaker">Patrick Spencer</p>
-            <p class="job">SeP Analyzer</p>
-          </div>
-        </div>
-
-        <div class="speakers-box">
-          <div class="box-image">
-            <figure>
-              <img src="../assets/img/speaker-5.jpg" alt="">
-            </figure>
-            <div class="box-icon">
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-          </div>
-          <div>
-            <p class="speaker">Janet Jones</p>
-            <p class="job">Newyork Post's GM</p>
-          </div>
-        </div>
-
-        <div class="speakers-box">
-          <div class="box-image">
-            <figure>
-              <img src="../assets/img/speaker-4.jpg" alt="">
-            </figure>
-            <div class="box-icon">
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-          </div>
-          <div>
-            <p class="speaker">Michael Dover</p>
-            <p class="job">Starbuck's CEO</p>
-          </div>
-        </div>
-
-        <div class="speakers-box">
-          <div class="box-image">
-            <figure>
-              <img src="../assets/img/speaker-3.jpg" alt="">
-            </figure>
-            <div class="box-icon">
-              <i class="fa-brands fa-twitter"></i>
-              <i class="fa-brands fa-facebook-f"></i>
-              <i class="fa-brands fa-linkedin-in"></i>
-            </div>
-          </div>
-          <div>
-            <p class="speaker">Angelina Holy</p>
-            <p class="job">Maxii's Manager</p>
+            <p class="speaker">{{ el.speaker }}</p>
+            <p class="job">{{ el.job }}</p>
           </div>
         </div>
 
@@ -96,6 +45,32 @@
 <script>
 export default {
   name: 'MainSpeakers',
+  data() {
+    return {
+      speakersList: [
+        {
+          img: require('../assets/img/speaker-6.jpg'),
+          speaker: 'Patrick Spencer',
+          job: 'S&P Analyzer'
+        },
+        {
+          img: require('../assets/img/speaker-5.jpg'),
+          speaker: 'Janet Jones',
+          job: "Newyork Post's GM"
+        },
+        {
+          img: require('../assets/img/speaker-4.jpg'),
+          speaker: 'Michael Dover',
+          job: "Starbuck's CEO"
+        },
+        {
+          img: require('../assets/img/speaker-3.jpg'),
+          speaker: 'Angelina Holy',
+          job: "Maxii's Manager"
+        }
+      ]
+    }
+  }
   
 }
 </script>

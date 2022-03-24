@@ -9,23 +9,8 @@
       </div>
 
       <div class="row box-image-sponsors">
-        <figure class="item-sponsors">
-          <img src="../assets/img/banner-1.jpg" alt="">
-        </figure>
-        <figure class="item-sponsors">
-          <img src="../assets/img/banner-2.jpg" alt="">
-        </figure>
-        <figure class="item-sponsors">
-          <img src="../assets/img/banner-3.jpg" alt="">
-        </figure>
-        <figure class="item-sponsors">
-          <img src="../assets/img/banner-4.jpg" alt="">
-        </figure>
-        <figure class="item-sponsors">
-          <img src="../assets/img/banner-5.jpg" alt="">
-        </figure>
-        <figure class="item-sponsors">
-          <img src="../assets/img/banner-6.jpg" alt="">
+        <figure v-for="(el, i) in sponsorList" :key="i" class="item-sponsors">
+          <img :src="el.img" alt="">
         </figure>
       </div>
 
@@ -37,7 +22,30 @@
 <script>
 export default {
   name: 'MainSponsor',
-  
+  data() {
+    return {
+      sponsorList: [
+        {
+          img: require('../assets/img/banner-1.jpg')
+        },
+        {
+          img: require('../assets/img/banner-2.jpg')
+        },
+        {
+          img: require('../assets/img/banner-3.jpg')
+        },
+        {
+          img: require('../assets/img/banner-4.jpg')
+        },
+        {
+          img: require('../assets/img/banner-5.jpg')
+        },
+        {
+          img: require('../assets/img/banner-6.jpg')
+        }
+      ]
+    }
+  }
 }
 </script>
 

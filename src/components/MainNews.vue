@@ -17,51 +17,19 @@
 
       <div class="row row-news">
 
-        <div class="box-news">
+        <div v-for="(el, i) in newsList" :key="i" class="box-news">
           <figure class="img">
-            <img src="../assets/img/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o (2).jpg" alt="">
+            <img :src="el.img" alt="">
             <div class="stick-news">
               <i class="fa-solid fa-volume-high"></i>
               <p>Sticky Post</p>
             </div>
           </figure>
           <div>
-            <p class="data-post">03 Dec 2013 / 0 comments</p>
-            <h4 class="title-news">Sedial eiusmod tempor</h4>
-            <p class="description-news">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua idque Caesaris facere voluntate liceret: sese habere...</p>
-            <p class="more-info">Read More</p>
-          </div>
-        </div>
-
-        <div class="box-news">
-          <figure class="img">
-            <img src="../assets/img/photodune-8797753-multiethnic-people-with-startup-business-t (2).jpg" alt="">
-            <div class="stick-news">
-              <i class="fa-solid fa-volume-high"></i>
-              <p>Sticky Post</p>
-            </div>
-          </figure>
-          <div>
-            <p class="data-post">03 Dec 2013 / 2 comments</p>
-            <h4 class="title-news">Donec luctus imperdiet</h4>
-            <p class="description-news">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua idque Caesaris facere voluntate liceret: sese habere...</p>
-            <p class="more-info">Read More</p>
-          </div>
-        </div>
-
-        <div class="box-news">
-          <figure class="img">
-            <img src="../assets/img/photodune-8522811-speaker-at-business-conference-and-present (2).jpg" alt="">
-            <div class="stick-news">
-              <i class="fa-solid fa-volume-high"></i>
-              <p>Sticky Post</p>
-            </div>
-          </figure>
-          <div>
-            <p class="data-post">03 Dec 2013 / 2 comments</p>
-            <h4 class="title-news">Magna pars studiorum</h4>
-            <p class="description-news">Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua idque Caesaris facere voluntate liceret: sese habere...</p>
-            <p class="more-info">Read More</p>
+            <p class="data-post">{{ el.post }}</p>
+            <h4 class="title-news">{{ el.title }}</h4>
+            <p class="description-news">{{ el.description }}</p>
+            <p class="more-info">{{ el.more }}</p>
           </div>
         </div>
 
@@ -75,7 +43,33 @@
 <script>
 export default {
   name: 'MainNews',
-  
+  data() {
+    return {
+      newsList: [
+        {
+          img: require('../assets/img/photodune-7770665-two-white-coffee-mug-with-diy-decoration-o (2).jpg'),
+          post: '03 Dec 2013 / 0 comments',
+          title: 'Sedial eiusmod tempor',
+          description: 'Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua idque Caesaris facere voluntate liceret: sese habere...',
+          more: 'Read More'
+        },
+        {
+          img: require('../assets/img/photodune-8797753-multiethnic-people-with-startup-business-t (2).jpg'),
+          post: '03 Dec 2013 / 2 comments',
+          title: 'Donec luctus imperdiet',
+          description: 'Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua idque Caesaris facere voluntate liceret: sese habere...',
+          more: 'Read More'
+        },
+        {
+          img: require('../assets/img/photodune-8522811-speaker-at-business-conference-and-present (2).jpg'),
+          post: '03 Dec 2013 / 2 comments',
+          title: 'Magna pars studiorum',
+          description: 'Lorem ipsum dolor sit amet, consectetur elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua idque Caesaris facere voluntate liceret: sese habere...',
+          more: 'Read More'
+        },
+      ]
+    }
+  }
 }
 </script>
 

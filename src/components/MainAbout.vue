@@ -5,37 +5,17 @@
 
       <div class="row">
 
-        <div class="container-about">
+        <div v-for="(el, i) in aboutList" :key="i" class="container-about">
           <div class="icon-wrapper">
-            <i class="fa-solid fa-trophy"></i>
+            <i :class="el.icon"></i>
           </div>
           <div class="description-wrapper">
-            <p class="title-about">Who we are</p>
-            <p class="description-about">Donec id elit non mi porta gravida at eget me tus. Sed posuere consectetur estat lobo rtis. Cum sociis natoque.</p>
-            <p class="more-info">Learn more</p>
+            <p class="title-about">{{ el.question }}</p>
+            <p class="description-about">{{ el.description }}</p>
+            <p class="more-info">{{ el.more }}</p>
           </div>
         </div>
-        <div class="container-about">
-          <div class="icon-wrapper">
-            <i class="fa-solid fa-bolt"></i>
-          </div>
-          <div class="description-wrapper">
-            <p class="title-about">What we do</p>
-            <p class="description-about">Donec id elit non mi porta gravida at eget me tus. Sed posuere consectetur estat lobo rtis. Cum sociis natoque.</p>
-            <p class="more-info">Learn more</p>
-          </div>
-        </div>
-        <div class="container-about">
-          <div class="icon-wrapper">
-            <i class="fa-solid fa-question"></i>
-          </div>
-          <div class="description-wrapper">
-            <p class="title-about">Why us?</p>
-            <p class="description-about">Donec id elit non mi porta gravida at eget me tus. Sed posuere consectetur estat lobo rtis. Cum sociis natoque.</p>
-            <p class="more-info">Learn more</p>
-          </div>
-        </div>
-
+        
       </div>
 
     </div>
@@ -46,7 +26,30 @@
 <script>
 export default {
   name: 'MainAbout',
-  
+  data() {
+    return {
+      aboutList: [
+        {
+          question: 'Who we are',
+          description: 'Donec id elit non mi porta gravida at eget me tus. Sed posuere consectetur estat lobo rtis. Cum sociis natoque.',
+          more: 'Learn more',
+          icon: 'fa-solid fa-trophy'
+        },
+        {
+          question: 'What we do',
+          description: 'Donec id elit non mi porta gravida at eget me tus. Sed posuere consectetur estat lobo rtis. Cum sociis natoque.',
+          more: 'Learn more',
+          icon: 'fa-solid fa-bolt'
+        },
+        {
+          question: 'Why us?',
+          description: 'Donec id elit non mi porta gravida at eget me tus. Sed posuere consectetur estat lobo rtis. Cum sociis natoque.',
+          more: 'Learn more',
+          icon: 'fa-solid fa-question'
+        }
+      ]
+    }
+  }
 }
 </script>
 
